@@ -1,0 +1,164 @@
+w
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ADD PRODUCTS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<link rel="stylesheet" type="text/css" href="css/add.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(window).load(function()
+{
+   $("div.lay").show();
+  $("div.lay1").hide();
+    $("div.lay2").hide();
+	
+});
+$(document).ready(function(){
+    // Hide displayed paragraphs with different speeds
+  
+    
+    // Show hidden paragraphs with different speeds
+    $(".nbutton").click(function(){
+        $("div.lay").show();
+       $("div.lay1").hide();
+        $("div.lay2").hide();
+
+        
+    });
+    $("#nbutton1").click(function(){
+        $("div.lay").hide();
+       $("div.lay1").show();
+        $("div.lay2").hide();
+
+        
+    }); 
+    $("#nbutton2").click(function(){
+        $("div.lay").hide();
+       $("div.lay1").hide();
+        $("div.lay2").show();
+
+        
+    });
+});
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('images/2.png');
+  background-position: 250px 8px ;
+  background-repeat: no-repeat;
+ outline:0px;
+  font-size: 16px;
+  padding: 7px 7px 7px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  outline-color:red;
+  border-radius: 25px;
+   outline-color
+  height:50px;
+width:300px;
+}#myInput1 {
+  background-image: url('images/1.png');
+  background-position: 250px 6px ;
+  background-repeat: no-repeat;
+ outline:0px;
+  font-size: 16px;
+  padding: 8px 7px 7px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  outline-color:red;
+  border-radius: 25px;
+   outline-color
+  height:50px;
+width:300px;
+}
+#myInput2 {
+  background-image: url('images/1.png');
+  background-position: 120px 6px ;
+  background-repeat: no-repeat;
+ outline:0px;
+  font-size: 16px;
+  padding: 8px 7px 7px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  outline-color:red;
+  border-radius: 25px;
+   outline-color
+  height:50px;
+width:150px;
+}
+
+</style>
+function myfun(){
+<script type="text/javascript">
+var input = document.getElementById('filesToUpload');
+var list = document.getElementById('fileList');
+
+//empty list for now...
+while (list.hasChildNodes()) {
+	list.removeChild(ul.firstChild);
+}
+
+//for every file...
+for (var x = 0; x < input.files.length; x++) {
+	//add to list
+	var li = document.createElement('li');
+	li.innerHTML = 'File ' + (x + 1) + ':  ' + input.files[x].name;
+	list.append(li);}
+
+}</script>
+</head>
+<body>
+<div class="header">
+<p style="font-size:30px;padding:8px 8px;"><span>GRIZZLY</span><span><img src="images/login.jpg" alt="logo.jpg"></span><span>STORE</span>
+<i class="fa fa-bell" style="font-size:17px;margin-left:50%;"></i><span style="font-size:20px;margin-left:9px;">Welcome Admin</span>
+<button class="button"><span>logout</span></button>
+</div>
+<div class="side">
+ <div class="border"></div>
+<h4 style="text-align:center"><B>Helen Cho</B></h4><br>
+<h5 style="text-align:center"><B>ID</B></h5>
+<h6 style="text-align:center">GRZLY17234</h6>
+<h5 style="text-align:center"><B>Designation</B></h5>
+<h6 style="text-align:center">Sr. Admin</h6>
+<h5 style="text-align:center"><B>Office</B></h5>
+<h6 style="text-align:center">NYC, NY, USA</h6>
+</div>
+
+<button class="nbutton" >PRODUCTS</button>
+<button class="nbutton" id="nbutton1">VENDORS</button>
+<button class="nbutton" id="nbutton2" >CATEGORY</button>
+
+<div class="lay" >
+<div class="border1"><div class="one1">
+<img src="images/3.png" alt="Image Upload"  style="border:3px dotted white;width:150px;height:150px;">
+<br><br>
+<div class="0ne2"> 
+<form action="insert.php" method="post" enctype="multipart/form-data"> 
+<input name="filesToUpload[]" id="filesToUpload" type="file" multiple="" /><br>
+ <input type="submit" value="Upload">
+</form>
+</div>
+  </div>
+</div>
+
+</div>
+<div class="lay1" ></div>
+
+<div class="lay2" ></div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+.border1 {
+   background-color:#B6B6B4;
+    width: 300px;
+    height: 300px;
+	margin-left:40px;
+   
+	
+  }
+.one1 {
+
+  width: 150px;
+    height: 150px;
+ margin-left:70px;
+margin-top: 50px;
+
+
+ display:inline-block;
+}
+.one2{
+
+  width: 150px;
+    height: 150px;
+ margin-left:70px;
+margin-top: 10px;
+
+
+ display:inline-block;
+}
